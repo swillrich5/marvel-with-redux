@@ -3,8 +3,8 @@
 function App() {
   return (
     <div className="App">
-      <h1>Marvel Application with Redux-Saga</h1>
-      <h2>Hello World!</h2>
+      <h1 className="text-center">Marvel Application with Redux-Saga</h1>
+      <h2 className="text-center">Hello World!</h2>
     </div>
   );
 }
