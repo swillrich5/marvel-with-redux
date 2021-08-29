@@ -1,12 +1,16 @@
-
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Home from './pages/Home';
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-center">Marvel Application with Redux-Saga</h1>
-      <h2 className="text-center">Hello World!</h2>
-      <h3>{process.env.REACT_APP_PUBLIC_KEY}</h3>
-    </div>
+    <Router>
+      <div className="App">
+        <Switch>
+          <Route exact path='/' component={Home}/>
+        </Switch>
+      </div>
+    </Router>
+
   );
 }
 
